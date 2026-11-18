@@ -1,0 +1,31 @@
+# توسيع نطاق الذكاء الاصطناعي من المشروعات التجريبية إلى بيئة الإنتاج
+
+> تعرف لماذا تعثرت المشروعات التجريبية، وتختبر أفضلها على حالات واقعية، وتقيس جاهزية بياناتها، وتنقلها إلى الإنتاج ببوابات لها مالكون وقاعدة توقف. مقرر من أكاديمية سدايا، الرمز LDS-EXE-207، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/lds-exe-207/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/lds-exe-207/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/lds-exe-207/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 13,457 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/lds-exe-207/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: من التعثر إلى الدليل](https://sdaiaacademy.github.io/lds-exe-207/slides/day1.md): يوم كامل بثلاث جلسات: تشخيص ثمانية مشروعات متعثرة، ثم إعادة اختبار مشروع على حالات واقعية، ثم جاهزية البيانات لمشروعين؛ الجلسات: لماذا تتعثر المشروعات التجريبية، العرض التوضيحي ليس الحالات الواقعية، جاهزية البيانات والتكامل وهوية الوكيل؛ الصفحة: https://sdaiaacademy.github.io/lds-exe-207/slides/day1.html؛ نحو 7,076 من الوحدات النصية
+- [اليوم 2: نموذج التشغيل والبوابات](https://sdaiaacademy.github.io/lds-exe-207/slides/day2.md): نصف يوم تعليمي بجلستين: نموذج التشغيل وإعادة تصميم العملية، ثم بوابات التوسع وقاعدة التوقف؛ وفي بقية اليوم التحضير للمشروع الختامي والتشخيص المراقب والمراجعات؛ الجلسات: نموذج التشغيل وإعادة تصميم العملية، بوابات التوسع وقاعدة التوقف؛ الصفحة: https://sdaiaacademy.github.io/lds-exe-207/slides/day2.html؛ نحو 4,176 من الوحدات النصية
+- [المشروع الختامي: خطة التوسع لمشروعين](https://sdaiaacademy.github.io/lds-exe-207/slides/capstone.md): تحضير 50 دقيقة في القاعة، ثم مراجعة من عشر دقائق لكل مشارك: خمس للعرض وخمس للأسئلة، يغيّر فيها المقيِّم نتيجة بوابة ويقرر المشارك مباشرة؛ الصفحة: https://sdaiaacademy.github.io/lds-exe-207/slides/capstone.html؛ نحو 1,606 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: تشخيص ثمانية مشروعات متعثرة](https://sdaiaacademy.github.io/lds-exe-207/labs/D1_1_diagnosis.md): اليوم 1، الجلسة 1، 70 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-exe-207/labs/D1_1_diagnosis.html
+- [المختبر 1.2: إعادة الاختبار على 30 حالة واقعية](https://sdaiaacademy.github.io/lds-exe-207/labs/D1_2_retest.md): اليوم 1، الجلسة 2، 80 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-exe-207/labs/D1_2_retest.html
+- [المختبر 1.3: درجة جاهزية البيانات لمشروعين](https://sdaiaacademy.github.io/lds-exe-207/labs/D1_3_readiness.md): اليوم 1، الجلسة 3، 70 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-exe-207/labs/D1_3_readiness.html
+- [المختبر 2.1: نموذج التشغيل وعملية بلا حلول التفافية](https://sdaiaacademy.github.io/lds-exe-207/labs/D2_1_model_redesign.md): اليوم 2، الجلسة 1، 80 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-exe-207/labs/D2_1_model_redesign.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/lds-exe-207/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 13,457 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/lds-exe-207/context/day1.md): اليوم 1، نحو 7,076 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/lds-exe-207/context/day2.md): اليوم 2، نحو 4,176 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/lds-exe-207/context/capstone.md): المشروع الختامي، نحو 1,606 من الوحدات النصية

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="defs_p1_tobe" targetNamespace="https://sdaiaacademy.github.io/lds-exe-207/">
+  <bpmn:process id="p1_tobe" name="طلبات الصيانة في رَدهة: العملية بعد إعادة التصميم (حل مرجعي)" isExecutable="false">
+    <bpmn:startEvent id="start" name="طلب صيانة" />
+    <bpmn:task id="B1" name="B1 · المستأجر يرسل الطلب (المستأجر)" />
+    <bpmn:task id="B2" name="B2 · النموذج يفرز الطلب ويكتب الفئة والأولوية والوحدة في أمر العمل بحساب خدمة (النظام)" />
+    <bpmn:task id="B3" name="B3 · قاعدة كلمات للطوارئ تعمل مع النموذج، وأي طارئ يذهب فورًا إلى المناوب ليؤكده (مشرف المناوبة)" />
+    <bpmn:task id="B4" name="B4 · المنسق يؤكد الفئة والأولوية في قائمة أوامر العمل أو يصححهما (منسق الصيانة)" />
+    <bpmn:task id="B5" name="B5 · إن كانت الوحدة «missing»: الموظف يتصل بالمستأجر (موظف مركز الاتصال)" />
+    <bpmn:task id="B6" name="B6 · المنسق يسند الطلب إلى فني داخل نظام أوامر العمل (منسق الصيانة)" />
+    <bpmn:task id="B7" name="B7 · الفني يصلح ويغلق الطلب من تطبيق الجوال (فني المقاول)" />
+    <bpmn:task id="B8" name="B8 · النظام يرسل رسالة نصية إلى المستأجر (النظام)" />
+    <bpmn:endEvent id="end" name="أُغلق الطلب" />
+    <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="B1" />
+    <bpmn:sequenceFlow id="f2" sourceRef="B1" targetRef="B2" />
+    <bpmn:sequenceFlow id="f3" sourceRef="B2" targetRef="B3" />
+    <bpmn:sequenceFlow id="f4" sourceRef="B3" targetRef="B4" />
+    <bpmn:sequenceFlow id="f5" sourceRef="B4" targetRef="B5" />
+    <bpmn:sequenceFlow id="f6" sourceRef="B5" targetRef="B6" />
+    <bpmn:sequenceFlow id="f7" sourceRef="B6" targetRef="B7" />
+    <bpmn:sequenceFlow id="f8" sourceRef="B7" targetRef="B8" />
+    <bpmn:sequenceFlow id="f9" sourceRef="B8" targetRef="end" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="diagram_p1_tobe">
+    <bpmndi:BPMNPlane id="plane_p1_tobe" bpmnElement="p1_tobe">
+      <bpmndi:BPMNShape id="start_di" bpmnElement="start">
+        <dc:Bounds x="60" y="142" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B1_di" bpmnElement="B1">
+        <dc:Bounds x="146" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B2_di" bpmnElement="B2">
+        <dc:Bounds x="346" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B3_di" bpmnElement="B3">
+        <dc:Bounds x="546" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B4_di" bpmnElement="B4">
+        <dc:Bounds x="746" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B5_di" bpmnElement="B5">
+        <dc:Bounds x="946" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B6_di" bpmnElement="B6">
+        <dc:Bounds x="1146" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B7_di" bpmnElement="B7">
+        <dc:Bounds x="1346" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="B8_di" bpmnElement="B8">
+        <dc:Bounds x="1546" y="120" width="150" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="end_di" bpmnElement="end">
+        <dc:Bounds x="1746" y="142" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="f1_di" bpmnElement="f1">
+        <di:waypoint x="96" y="160" />
+        <di:waypoint x="146" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f2_di" bpmnElement="f2">
+        <di:waypoint x="296" y="160" />
+        <di:waypoint x="346" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f3_di" bpmnElement="f3">
+        <di:waypoint x="496" y="160" />
+        <di:waypoint x="546" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f4_di" bpmnElement="f4">
+        <di:waypoint x="696" y="160" />
+        <di:waypoint x="746" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f5_di" bpmnElement="f5">
+        <di:waypoint x="896" y="160" />
+        <di:waypoint x="946" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f6_di" bpmnElement="f6">
+        <di:waypoint x="1096" y="160" />
+        <di:waypoint x="1146" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f7_di" bpmnElement="f7">
+        <di:waypoint x="1296" y="160" />
+        <di:waypoint x="1346" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f8_di" bpmnElement="f8">
+        <di:waypoint x="1496" y="160" />
+        <di:waypoint x="1546" y="160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f9_di" bpmnElement="f9">
+        <di:waypoint x="1696" y="160" />
+        <di:waypoint x="1746" y="160" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

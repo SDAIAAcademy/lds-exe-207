@@ -1,0 +1,7 @@
+﻿source_id,source,system,owner,required_for_production,access_route,access_status,completeness_pct,duplicates_pct,validity_pct,classification,ai_use_approval,lineage,refresh_needed,refresh_actual
+T1,عقود الإيجار الموقعة (ملفات PDF),مستودع الوثائق,منصور الحبيّب، المستشار العام,yes,personal_login,granted,94,2,97,مقيد,approved,documented,daily,daily automated
+T2,حقول العقد في نظام السجل,نظام إدارة عقود الإيجار,نزار المحيسن، مدير تقنية المعلومات,yes,none,requested,96,1,97,مقيد,approved,documented,daily,continuous automated
+T3,مكتبة البنود القياسية,مستودع الوثائق,منصور الحبيّب، المستشار العام,yes,service_account,granted,100,0,91,مقيد,approved,partial,quarterly,manual on request
+T4,تقويم التجديد,نظام إدارة عقود الإيجار,مدير عمليات التأجير,yes,service_account,granted,98,0,99,مقيد,not_requested,documented,daily,daily automated
+T5,سجل مراجعة المحامين للحقول المستخرجة,جدول بيانات الشؤون القانونية,منصور الحبيّب، المستشار العام,yes,file_export,granted,81,3,92,مقيد,approved,none,weekly,manual on request
+T6,بيانات المستأجرين الرئيسة,نظام إدارة عقود الإيجار,مدير عمليات التأجير,no,service_account,granted,97,2,96,مقيد,not_requested,documented,daily,daily automated

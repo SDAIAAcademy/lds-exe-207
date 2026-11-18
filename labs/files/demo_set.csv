@@ -1,0 +1,17 @@
+﻿id,lang,message,expected_category,expected_urgency,expected_unit
+D01,ar,يوجد تسرب ماء من خلاط المطبخ. الشقة 0402 في المبنى B03.,plumbing,routine,B03-0402
+D02,en,The air conditioner in the master bedroom is not cooling. Unit B05-0701.,ac,urgent,B05-0701
+D03,ar,المكيف في الصالة لا يبرد. الشقة 0910 في المبنى B08.,ac,urgent,B08-0910
+D04,en,Please send someone to repaint the children's room. Unit B02-0305.,general,routine,B02-0305
+D05,en,I smell gas in the kitchen. Unit B06-0204.,gas,emergency,B06-0204
+D06,ar,المصعد في المبنى B11 متوقف منذ الصباح. أسكن في الشقة 1203.,lift,urgent,B11-1203
+D07,en,There are cockroaches in the bathroom. Unit B09-0102.,pest,routine,B09-0102
+D08,ar,قفل الباب الرئيسي لا يعمل ولا أستطيع إقفال الشقة. الشقة 0601 في المبنى B04.,carpentry,urgent,B04-0601
+D09,en,No hot water in the apartment since this morning. Unit B10-0508.,plumbing,urgent,B10-0508
+D10,ar,غسالة الصحون المرفقة بالشقة لا تعمل. الشقة 0303 في المبنى B07.,appliance,routine,B07-0303
+D11,en,The bedroom door is hard to close and squeaks. Unit B07-0101.,carpentry,routine,B07-0101
+D12,ar,يخرج شرر من مقبس الكهرباء في غرفة النوم. الشقة 0805 في المبنى B12.,electrical,emergency,B12-0805
+D13,en,The smoke detector in the hallway keeps beeping. Unit B01-1102.,electrical,routine,B01-1102
+D14,ar,انقطعت الكهرباء عن غرفتين في الشقة. الشقة 0207 في المبنى B09.,electrical,urgent,B09-0207
+D15,en,The kitchen sink drains very slowly. Unit B04-0909.,plumbing,routine,B04-0909
+D16,ar,يوجد نمل في المطبخ. الشقة 1005 في المبنى B02.,pest,routine,B02-1005

@@ -1,0 +1,7 @@
+﻿source_id,source,system,owner,required_for_production,access_route,access_status,completeness_pct,duplicates_pct,validity_pct,classification,ai_use_approval,lineage,refresh_needed,refresh_actual
+S1,رسائل المستأجرين من التطبيق وقناة المراسلة,تطبيق المستأجرين,بدر الحمودي، مدير مركز الاتصال,yes,file_export,granted,97,4,96,مقيد,requested,partial,continuous,daily manual export
+S2,سجل الوحدات (الوحدة والمبنى والمستأجر),نظام إدارة عقود الإيجار,مدير عمليات التأجير,yes,service_account,granted,99,1,98,مقيد,not_requested,documented,continuous,continuous automated
+S3,أوامر العمل: الفئات والطلبات المفتوحة والسجل,نظام أوامر العمل,ريم البطشان، مديرة إدارة الأملاك والمرافق,yes,none,requested,88,3,91,مقيد,requested,partial,continuous,continuous automated
+S4,جدول الفنيين ومهاراتهم,جدول بيانات مقاول الصيانة,منسق عقد الصيانة,no,file_export,granted,90,0,93,مقيد,not_requested,none,daily,weekly manual
+S5,قوالب الردود بالعربية والإنجليزية,قاعدة معرفة مركز الاتصال,بدر الحمودي، مدير مركز الاتصال,yes,service_account,granted,72,0,95,عام,not_needed,documented,monthly,monthly manual
+S6,مجموعة التقييم الواقعية (رسائل موسومة),مجلد مكتب توسيع الذكاء الاصطناعي,أنس الجسّار، رئيس مكتب توسيع الذكاء الاصطناعي,yes,service_account,granted,100,0,100,عام,not_needed,documented,monthly,none

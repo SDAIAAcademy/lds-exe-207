@@ -1,0 +1,31 @@
+﻿id,lang,channel,message,expected_category,expected_urgency,expected_unit
+R01,ar,app,السلام عليكم، المكيف في غرفة النوم لا يبرد منذ أمس. الشقة 0507 في المبنى B03.,ac,urgent,B03-0507
+R02,ar,messaging,فيه ريحة قوية طالعة من عند الفرن من الصبح والعيال دايخين، عمارة 7 شقة 12,gas,emergency,B07-0012
+R03,en,app,"Hi, the kitchen tap is leaking slowly. Unit B05-0210.",plumbing,routine,B05-0210
+R04,ar,voice,السلام عليكم معك ابو فهد من عمارة تسعة الدور الثالث يعني الشقة ثلاثمية واربعة الحين الكهربا طافية بنص البيت والثلاجة فيها اكل,electrical,urgent,B09-0304
+R05,en,messaging,lift not working since morning my mother is old she cannot use stairs building 14,lift,urgent,missing
+R06,ar,app,فيه تسريب بسيط تحت المغسلة، والأهم إن الباب الرئيسي ما يتقفل أبد واحنا مسافرين بكرة. شقة 1102 عمارة 1,carpentry,urgent,B01-1102
+R07,en,app,AC making a loud noise but still cooling. B08-0601,ac,routine,B08-0601
+R08,ar,messaging,المكيف يهرّب موية على الجدار والموية صارت تنقط على فيش الكهربا,electrical,emergency,missing
+R09,en,app,"Water is pouring from the ceiling in the living room, it's flooding. Unit B02-0903. Please hurry!",plumbing,emergency,B02-0903
+R10,ar,app,نرجو إرسال فني لطلاء جدار غرفة الأطفال. الشقة 0105 في المبنى B04.,general,routine,B04-0105
+R11,ar,messaging,الـ AC ما يشتغل نهائي والـ thermostat طافي، unit B06-0402,ac,urgent,B06-0402
+R12,en,messaging,"There's a person stuck in the lift in building 11, between floors 4 and 5!!",lift,emergency,missing
+R13,ar,messaging,الصراصير مالية المطبخ، ممكن أحد يجي يرش؟ شقة 208 عمارة 15,pest,routine,B15-0208
+R14,ar,app,الماء الساخن لا يعمل في الشقة منذ يومين.,plumbing,urgent,missing
+R15,en,app,The dishwasher that came with the flat stopped draining. B10-0711,appliance,routine,B10-0711
+R16,ar,voice,يا اخوان الفيش اللي بالصالة يطلع شرار وريحة حريق ابي احد يجي ضروري عمارة اثنعش شقة خمسمية وسبعة,electrical,emergency,B12-0507
+R17,en,app,"Front door lock is jammed, I can't lock it from inside. Unit B07-0302",carpentry,urgent,B07-0302
+R18,ar,app,نافذة غرفة النوم لا تُغلق جيدًا ويدخل الغبار. الشقة 0806 في المبنى B05.,carpentry,routine,B05-0806
+R19,ar,messaging,السيفون خربان والموية ما توقف تمشي بالحمام، شقة 403 عمارة 2,plumbing,routine,B02-0403
+R20,en,messaging,Third time asking!!! Nobody came to fix the AC and it's 45 degrees. B03-1004,ac,urgent,B03-1004
+R21,ar,messaging,"el mukayef ma yebared, shaqa 5 3emara 16",ac,urgent,B16-0005
+R22,en,app,Can someone check the smoke detector beeping in the hallway? B09-0106,electrical,routine,B09-0106
+R23,ar,app,نشكركم على سرعة إصلاح المصعد أمس. ونود الإبلاغ عن تشقق صغير في بلاط الشرفة. الشقة 0703 في المبنى B11.,general,routine,B11-0703
+R24,en,app,"Toilet blocked, and it is the only bathroom in the apartment. B12-0202",plumbing,urgent,B12-0202
+R25,ar,messaging,الباب الخارجي حق العمارة خربان وأي أحد يدخل، عمارة 4,carpentry,urgent,missing
+R26,en,app,Ants in the kitchen. Not urgent. B01-0909,pest,routine,B01-0909
+R27,ar,app,المكيف لا يعمل في الصالة، كما توجد بقعة رطوبة في السقف. الشقة 1201 في المبنى B08.,ac,urgent,B08-1201
+R28,ar,voice,الو السلام عليكم انا ساكنة في شقة مية وواحد عمارة ستة الموية الحارة ما تطلع من يوم السبت,plumbing,urgent,B06-0101
+R29,en,app,The washing machine provided with the unit leaks water onto the floor every wash. B04-0808,appliance,routine,B04-0808
+R30,ar,messaging,ودي أعرف متى موعد تجديد العقد؟ وبعد الدش ما يطلع موية زين، شقة 305 عمارة 10,plumbing,routine,B10-0305
