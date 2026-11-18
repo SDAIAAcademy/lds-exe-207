@@ -369,7 +369,7 @@ assert(asisMin === 11 && tobeMin === 2.07, 'as-is 11.0 and to-be 2.07 minutes');
 put('files/p1_asis.csv', csv([['step', 'activity', 'actor', 'system', 'staff_minutes', 'share_of_requests'], ...ASIS]));
 put('files/p1_tobe_template.csv', csv([['step', 'activity', 'actor', 'system', 'staff_minutes', 'share_of_requests', 'replaces_step', 'human_check', 'change_owner']]));
 
-// A BPMN 2.0 file of the as-is process that bpmn.io and draw.io open. Tasks in one row.
+// A BPMN 2.0 file of the as-is process that bpmn.io opens and edits. Tasks in one row.
 function bpmn(id, name, steps) {
   const W = 150, H = 80, GAP = 50, Y = 120;
   const nodes = [{ id: 'start', kind: 'startEvent', name: 'طلب صيانة' }, ...steps.map((s) => ({ id: s[0], kind: 'task', name: `${s[0]} · ${s[1]} (${s[2]})` })), { id: 'end', kind: 'endEvent', name: 'أُغلق الطلب' }];
