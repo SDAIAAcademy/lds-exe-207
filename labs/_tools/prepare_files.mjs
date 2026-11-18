@@ -421,6 +421,11 @@ put('files/portfolio.csv', csv([
   ['P8', 'تلخيص مكالمات خدمة العملاء', 'خدمة العملاء', 'بدر الحمودي', 'نموذج لغوي مستضاف', '2026-01', 3, 90000, 'اكتملت التجربة، وينتظر', 700000]
 ]));
 
+put('files/diagnosis_template.csv', csv([
+  ['pilot', 'main_cause', 'fact_from_the_notes', 'misleading_symptom', 'what_would_unblock_it'],
+  ...['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8'].map((p) => [p, '', '', '', ''])
+]));
+
 // Capstone: cost per successful task. The course's own assumptions.
 export const COST = {
   P1: { volume: 9600, baseline_min: BASELINE_MIN_P1, baseline_ftr: 0.95, wage: 1.5, model_per_task: 0.06, fixed_month: 18000, tobe_min: tobeMin, asis_min: asisMin, rework_min: 4.0, success: realSum.pass / realSum.n },
