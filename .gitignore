@@ -34,3 +34,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 /*.log
+
+# Results the re-test runner writes while a participant works
+labs/retest/runs/

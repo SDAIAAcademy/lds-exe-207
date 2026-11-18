@@ -1,0 +1,11 @@
+﻿parameter,P1,P2,meaning
+monthly_volume_production,9600,1150,requests (P1) or leases (P2) a month at full scale
+baseline_staff_minutes_per_task,10,35,before the pilot
+baseline_first_time_right,0.95,0.97,share of tasks right the first time before the pilot
+loaded_cost_per_staff_minute_sar,1.5,2.8,"salary, allowances and overheads"
+model_cost_per_task_sar,0.06,0.9,hosted model at production volume
+fixed_monthly_cost_sar,18000,9000,"platform, monitoring, evaluation upkeep, support"
+staff_minutes_per_task_with_pilot_today,11,20,"the process as it runs with the pilot, workarounds included"
+staff_minutes_per_task_after_redesign,2.07,12,P1: the reference redesign of lab 2.1; P2: the legal team estimate once fields reach the lease system
+rework_minutes_per_failed_task,4,20,correcting a task the system got wrong
+measured_success_rate,,0.88,P1: write your realistic-set pass rate from lab 1.2; P2: 106 of 120 leases fully right in the pilot check

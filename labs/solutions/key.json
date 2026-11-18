@@ -1,0 +1,514 @@
+{
+  "note": "Reference numbers for the trainer, written by labs/_tools/prepare_files.mjs. Synthetic data.",
+  "lab_1_2": {
+    "demo": {
+      "n": 16,
+      "pass": 15,
+      "rate": 93.8,
+      "ar": {
+        "n": 8,
+        "pass": 8,
+        "rate": 100
+      },
+      "en": {
+        "n": 8,
+        "pass": 7,
+        "rate": 87.5
+      },
+      "critical": [],
+      "failed": [
+        "D11"
+      ],
+      "field_errors": {
+        "category": [
+          "D11"
+        ],
+        "urgency": [],
+        "unit": [],
+        "unit_invented": [],
+        "reply_language": []
+      }
+    },
+    "realistic": {
+      "n": 30,
+      "pass": 18,
+      "rate": 60,
+      "ar": {
+        "n": 18,
+        "pass": 8,
+        "rate": 44.4
+      },
+      "en": {
+        "n": 12,
+        "pass": 10,
+        "rate": 83.3
+      },
+      "critical": [
+        "R02",
+        "R08"
+      ],
+      "failed": [
+        "R02",
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R11",
+        "R14",
+        "R16",
+        "R20",
+        "R21",
+        "R23",
+        "R30"
+      ],
+      "field_errors": {
+        "category": [
+          "R02",
+          "R06",
+          "R08",
+          "R20",
+          "R21",
+          "R23",
+          "R30"
+        ],
+        "urgency": [
+          "R02",
+          "R06",
+          "R08",
+          "R20",
+          "R21"
+        ],
+        "unit": [
+          "R04",
+          "R05",
+          "R14",
+          "R16",
+          "R21"
+        ],
+        "unit_invented": [
+          "R05",
+          "R14"
+        ],
+        "reply_language": [
+          "R11",
+          "R21"
+        ]
+      }
+    },
+    "emergencies": {
+      "demo": [
+        "D05",
+        "D12"
+      ],
+      "realistic": [
+        "R02",
+        "R08",
+        "R09",
+        "R12",
+        "R16"
+      ]
+    },
+    "failure_types_only_on_realistic": [
+      "urgency",
+      "unit",
+      "unit_invented",
+      "reply_language"
+    ],
+    "failures_by_feature": {
+      "clean": {
+        "n": 12,
+        "failed": 0
+      },
+      "dialect": {
+        "n": 4,
+        "failed": 2
+      },
+      "voice": {
+        "n": 3,
+        "failed": 2
+      },
+      "no-unit": {
+        "n": 4,
+        "failed": 2
+      },
+      "two-issues": {
+        "n": 4,
+        "failed": 3
+      },
+      "mixed": {
+        "n": 1,
+        "failed": 1
+      },
+      "complaint": {
+        "n": 1,
+        "failed": 1
+      },
+      "arabizi": {
+        "n": 1,
+        "failed": 1
+      }
+    },
+    "gap_points_en_minus_ar": 38.9
+  },
+  "lab_1_3": {
+    "P1": {
+      "score_pct": 66,
+      "points": 33,
+      "max": 50,
+      "sources": [
+        {
+          "id": "S1",
+          "required": true,
+          "dims": {
+            "access": 1,
+            "quality": 1,
+            "classification": 1,
+            "lineage": 1,
+            "refresh": 1
+          },
+          "total": 5,
+          "blocking": []
+        },
+        {
+          "id": "S2",
+          "required": true,
+          "dims": {
+            "access": 2,
+            "quality": 2,
+            "classification": 0,
+            "lineage": 2,
+            "refresh": 2
+          },
+          "total": 8,
+          "blocking": [
+            {
+              "source": "S2",
+              "dimension": "classification",
+              "owner": "مدير عمليات التأجير"
+            }
+          ]
+        },
+        {
+          "id": "S3",
+          "required": true,
+          "dims": {
+            "access": 0,
+            "quality": 1,
+            "classification": 1,
+            "lineage": 1,
+            "refresh": 2
+          },
+          "total": 5,
+          "blocking": [
+            {
+              "source": "S3",
+              "dimension": "access",
+              "owner": "ريم البطشان، مديرة إدارة الأملاك والمرافق"
+            }
+          ]
+        },
+        {
+          "id": "S4",
+          "required": false,
+          "dims": {
+            "access": 1,
+            "quality": 1,
+            "classification": 0,
+            "lineage": 0,
+            "refresh": 1
+          },
+          "total": 3,
+          "blocking": []
+        },
+        {
+          "id": "S5",
+          "required": true,
+          "dims": {
+            "access": 2,
+            "quality": 0,
+            "classification": 2,
+            "lineage": 2,
+            "refresh": 1
+          },
+          "total": 7,
+          "blocking": [
+            {
+              "source": "S5",
+              "dimension": "quality",
+              "owner": "بدر الحمودي، مدير مركز الاتصال"
+            }
+          ]
+        },
+        {
+          "id": "S6",
+          "required": true,
+          "dims": {
+            "access": 2,
+            "quality": 2,
+            "classification": 2,
+            "lineage": 2,
+            "refresh": 0
+          },
+          "total": 8,
+          "blocking": [
+            {
+              "source": "S6",
+              "dimension": "refresh",
+              "owner": "أنس الجسّار، رئيس مكتب توسيع الذكاء الاصطناعي"
+            }
+          ]
+        }
+      ],
+      "blocking": [
+        {
+          "source": "S2",
+          "dimension": "classification",
+          "owner": "مدير عمليات التأجير"
+        },
+        {
+          "source": "S3",
+          "dimension": "access",
+          "owner": "ريم البطشان، مديرة إدارة الأملاك والمرافق"
+        },
+        {
+          "source": "S5",
+          "dimension": "quality",
+          "owner": "بدر الحمودي، مدير مركز الاتصال"
+        },
+        {
+          "source": "S6",
+          "dimension": "refresh",
+          "owner": "أنس الجسّار، رئيس مكتب توسيع الذكاء الاصطناعي"
+        }
+      ]
+    },
+    "P2": {
+      "score_pct": 70,
+      "points": 35,
+      "max": 50,
+      "sources": [
+        {
+          "id": "T1",
+          "required": true,
+          "dims": {
+            "access": 1,
+            "quality": 1,
+            "classification": 2,
+            "lineage": 2,
+            "refresh": 2
+          },
+          "total": 8,
+          "blocking": [
+            {
+              "source": "T1",
+              "dimension": "access (agent identity: a person's login)",
+              "owner": "منصور الحبيّب، المستشار العام"
+            }
+          ]
+        },
+        {
+          "id": "T2",
+          "required": true,
+          "dims": {
+            "access": 0,
+            "quality": 2,
+            "classification": 2,
+            "lineage": 2,
+            "refresh": 2
+          },
+          "total": 8,
+          "blocking": [
+            {
+              "source": "T2",
+              "dimension": "access",
+              "owner": "نزار المحيسن، مدير تقنية المعلومات"
+            }
+          ]
+        },
+        {
+          "id": "T3",
+          "required": true,
+          "dims": {
+            "access": 2,
+            "quality": 1,
+            "classification": 2,
+            "lineage": 1,
+            "refresh": 1
+          },
+          "total": 7,
+          "blocking": []
+        },
+        {
+          "id": "T4",
+          "required": true,
+          "dims": {
+            "access": 2,
+            "quality": 2,
+            "classification": 0,
+            "lineage": 2,
+            "refresh": 2
+          },
+          "total": 8,
+          "blocking": [
+            {
+              "source": "T4",
+              "dimension": "classification",
+              "owner": "مدير عمليات التأجير"
+            }
+          ]
+        },
+        {
+          "id": "T5",
+          "required": true,
+          "dims": {
+            "access": 1,
+            "quality": 0,
+            "classification": 2,
+            "lineage": 0,
+            "refresh": 1
+          },
+          "total": 4,
+          "blocking": [
+            {
+              "source": "T5",
+              "dimension": "quality",
+              "owner": "منصور الحبيّب، المستشار العام"
+            },
+            {
+              "source": "T5",
+              "dimension": "lineage",
+              "owner": "منصور الحبيّب، المستشار العام"
+            }
+          ]
+        },
+        {
+          "id": "T6",
+          "required": false,
+          "dims": {
+            "access": 2,
+            "quality": 2,
+            "classification": 0,
+            "lineage": 2,
+            "refresh": 2
+          },
+          "total": 8,
+          "blocking": []
+        }
+      ],
+      "blocking": [
+        {
+          "source": "T1",
+          "dimension": "access (agent identity: a person's login)",
+          "owner": "منصور الحبيّب، المستشار العام"
+        },
+        {
+          "source": "T2",
+          "dimension": "access",
+          "owner": "نزار المحيسن، مدير تقنية المعلومات"
+        },
+        {
+          "source": "T4",
+          "dimension": "classification",
+          "owner": "مدير عمليات التأجير"
+        },
+        {
+          "source": "T5",
+          "dimension": "quality",
+          "owner": "منصور الحبيّب، المستشار العام"
+        },
+        {
+          "source": "T5",
+          "dimension": "lineage",
+          "owner": "منصور الحبيّب، المستشار العام"
+        }
+      ]
+    }
+  },
+  "lab_2_1": {
+    "staff": 1600,
+    "ai_skilled": 13,
+    "workarounds": [
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A8"
+    ],
+    "asis_staff_minutes": 11,
+    "baseline_staff_minutes": 10,
+    "tobe_staff_minutes": 2.07,
+    "tobe_steps": [
+      {
+        "step": "B1",
+        "minutes": 0,
+        "share": 1
+      },
+      {
+        "step": "B2",
+        "minutes": 0,
+        "share": 1
+      },
+      {
+        "step": "B3",
+        "minutes": 2,
+        "share": 0.03
+      },
+      {
+        "step": "B4",
+        "minutes": 0.5,
+        "share": 1
+      },
+      {
+        "step": "B5",
+        "minutes": 3,
+        "share": 0.17
+      },
+      {
+        "step": "B6",
+        "minutes": 1,
+        "share": 1
+      },
+      {
+        "step": "B7",
+        "minutes": 0,
+        "share": 1
+      },
+      {
+        "step": "B8",
+        "minutes": 0,
+        "share": 1
+      }
+    ]
+  },
+  "capstone": {
+    "P1": {
+      "baseline_per_task": 15,
+      "baseline_per_success": 15.79,
+      "asis": {
+        "monthly_total": 200016,
+        "successes": 5760,
+        "per_success": 34.73
+      },
+      "tobe": {
+        "monthly_total": 71424,
+        "successes": 5760,
+        "per_success": 12.4
+      }
+    },
+    "P2": {
+      "baseline_per_task": 98,
+      "baseline_per_success": 101.03,
+      "asis": {
+        "monthly_total": 81948.33,
+        "successes": 1015.83,
+        "per_success": 80.67
+      },
+      "tobe": {
+        "monthly_total": 56188.33,
+        "successes": 1015.83,
+        "per_success": 55.31
+      }
+    }
+  }
+}
