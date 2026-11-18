@@ -8,7 +8,7 @@
 
 في المختبر 1.2 يعيد المشارك اختبار مشروع فرز طلبات الصيانة على 30 رسالة واقعية. ثلاثة طرق، والأرقام المرجعية محسوبة على الثالث:
 
-1. `retest/run_retest.py`: يرسل الحالات إلى نموذج مستضاف بواجهة متوافقة مع OpenAI، بالمتغيرات `LLM_BASE_URL` و`LLM_MODEL` و`LLM_API_KEY` (انظر `.env.example` في جذر المستودع)، ويكتب `retest/runs/outputs_<set>.csv`. يعمل بأداة `uv` ولا يحتاج غير مكتبة Python القياسية: `uv run labs/retest/run_retest.py` (المجموعتان)، أو `uv run labs/retest/run_retest.py realistic`. إن لم يكن مفتاح أو تعطل الاتصال، يعود إلى السجل المسجَّل حالةً حالة ويكتب ذلك في عمود `source`. ومع `--recorded` يعيد تشغيل السجل وحده.
+1. `retest/run_retest.py`: يرسل الحالات إلى نموذج مستضاف بواجهة متوافقة مع OpenAI، بالمتغيرات `LLM_BASE_URL` و`LLM_MODEL` و`LLM_API_KEY` (انظر `.env.example` في جذر المستودع: تُضبط في الطرفية، أو تُنسخ إلى `.env` ويُشغَّل البرنامج بـ `uv run --env-file .env labs/retest/run_retest.py`)، ويكتب `retest/runs/outputs_<set>.csv`. يعمل بأداة `uv` ولا يحتاج غير مكتبة Python القياسية: `uv run labs/retest/run_retest.py` (المجموعتان)، أو `uv run labs/retest/run_retest.py realistic`. إن لم يكن مفتاح أو تعطل الاتصال، يعود إلى السجل المسجَّل حالةً حالة ويكتب ذلك في عمود `source`. ومع `--recorded` يعيد تشغيل السجل وحده.
 2. صفحة محادثة لنموذج: يلصق المشارك تعليمات `files/p1_instructions.txt` ويرسل الرسائل الواقعية من R01 إلى R10، ويأخذ بقية الحالات من السجل المسجَّل.
 3. `files/outputs_demo_recorded.csv` و`files/outputs_realistic_recorded.csv`: مخرجات صممها المقرر لتعطي القاعة كلها الأرقام نفسها، وليست من نموذج لغوي.
 
@@ -45,12 +45,14 @@
 - `solutions/answer_key.md`: ما زُرع في الملفات، وأي مختبر يكشفه، وحساب المشروع الختامي وقراره المرجعي ومثال الدرجة الكاملة.
 - `solutions/key.json`: الأرقام المرجعية كلها، يكتبها المولّد.
 - `solutions/check_all.mjs`: يتحقق أن المولّد يكتب البايتات نفسها، ويعيد حساب كل رقم مرجعي من ملفات CSV. يطبع PASS أو أول اختلاف.
+- `_tools/verify_stats.mjs`: ملف المقرر للأرقام الذي تذكره ملاحظات المدرّب: يحسب أرقام الأمثلة الموازية على الشرائح وفي بنك الأسئلة، ومدى الثقة (ويلسون) لنتائج المختبر 1.2.
 
 الأدوات بلغة JavaScript ولا تحتاج غير Node 22 أو أحدث، وتُشغَّل من جذر المستودع:
 
 ```
 node labs/_tools/prepare_files.mjs
 node labs/solutions/check_all.mjs
+node labs/_tools/verify_stats.mjs
 ```
 
 الأول يعيد كتابة `files/` و`solutions/key.json` و`solutions/p1_tobe.bpmn`. مع `--check` لا يكتب شيئًا ويقارن فقط. مخرجات `retest/runs/` لا تُحفظ في المستودع.

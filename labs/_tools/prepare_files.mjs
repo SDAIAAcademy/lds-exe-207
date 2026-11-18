@@ -426,10 +426,11 @@ put('files/diagnosis_template.csv', csv([
   ...['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8'].map((p) => [p, '', '', '', ''])
 ]));
 
-// Capstone: cost per successful task. The course's own assumptions.
+// Capstone: cost per successful task. The course's own assumptions. P2's success rate is the
+// published, rounded value (0.88), so a participant who reads it from the CSV gets the key's numbers.
 export const COST = {
   P1: { volume: 9600, baseline_min: BASELINE_MIN_P1, baseline_ftr: 0.95, wage: 1.5, model_per_task: 0.06, fixed_month: 18000, tobe_min: tobeMin, asis_min: asisMin, rework_min: 4.0, success: realSum.pass / realSum.n },
-  P2: { volume: 1150, baseline_min: 35, baseline_ftr: 0.97, wage: 2.8, model_per_task: 0.9, fixed_month: 9000, tobe_min: 12, asis_min: 20, rework_min: 20, success: 106 / 120 }
+  P2: { volume: 1150, baseline_min: 35, baseline_ftr: 0.97, wage: 2.8, model_per_task: 0.9, fixed_month: 9000, tobe_min: 12, asis_min: 20, rework_min: 20, success: r2(106 / 120) }
 };
 function costPerSuccess(c, minutes, success) {
   const total = c.volume * c.model_per_task + c.fixed_month + c.volume * minutes * c.wage + c.volume * (1 - success) * c.rework_min * c.wage;
@@ -446,17 +447,17 @@ for (const [k, c] of Object.entries(COST)) {
 }
 assert(capstone.P1.tobe.per_success === 12.4 && capstone.P1.asis.per_success === 34.73 && capstone.P1.baseline_per_success === 15.79, 'P1 capstone costs');
 put('files/capstone_costs.csv', csv([
-  ['parameter', 'P1', 'P2', 'meaning'],
-  ['monthly_volume_production', COST.P1.volume, COST.P2.volume, 'requests (P1) or leases (P2) a month at full scale'],
-  ['baseline_staff_minutes_per_task', COST.P1.baseline_min, COST.P2.baseline_min, 'before the pilot'],
-  ['baseline_first_time_right', COST.P1.baseline_ftr, COST.P2.baseline_ftr, 'share of tasks right the first time before the pilot'],
-  ['loaded_cost_per_staff_minute_sar', COST.P1.wage, COST.P2.wage, 'salary, allowances and overheads'],
-  ['model_cost_per_task_sar', COST.P1.model_per_task, COST.P2.model_per_task, 'hosted model at production volume'],
-  ['fixed_monthly_cost_sar', COST.P1.fixed_month, COST.P2.fixed_month, 'platform, monitoring, evaluation upkeep, support'],
-  ['staff_minutes_per_task_with_pilot_today', COST.P1.asis_min, COST.P2.asis_min, 'the process as it runs with the pilot, workarounds included'],
-  ['staff_minutes_per_task_after_redesign', COST.P1.tobe_min, COST.P2.tobe_min, 'P1: the reference redesign of lab 2.1; P2: the legal team estimate once fields reach the lease system'],
-  ['rework_minutes_per_failed_task', COST.P1.rework_min, COST.P2.rework_min, 'correcting a task the system got wrong'],
-  ['measured_success_rate', '', r2(COST.P2.success), 'P1: write your realistic-set pass rate from lab 1.2; P2: 106 of 120 leases fully right in the pilot check']
+  ['parameter', 'P1', 'P2', 'meaning_ar'],
+  ['monthly_volume_production', COST.P1.volume, COST.P2.volume, 'طلبات الصيانة (P1) أو العقود (P2) في الشهر عند التوسع الكامل'],
+  ['baseline_staff_minutes_per_task', COST.P1.baseline_min, COST.P2.baseline_min, 'دقائق الموظفين لكل مهمة قبل المشروع التجريبي'],
+  ['baseline_first_time_right', COST.P1.baseline_ftr, COST.P2.baseline_ftr, 'نسبة المهام الصحيحة من أول مرة قبل المشروع التجريبي'],
+  ['loaded_cost_per_staff_minute_sar', COST.P1.wage, COST.P2.wage, 'تكلفة دقيقة الموظف بالريال: الراتب والبدلات والتكاليف غير المباشرة'],
+  ['model_cost_per_task_sar', COST.P1.model_per_task, COST.P2.model_per_task, 'تكلفة النموذج المستضاف لكل مهمة بالريال عند حجم الإنتاج'],
+  ['fixed_monthly_cost_sar', COST.P1.fixed_month, COST.P2.fixed_month, 'التكلفة الثابتة في الشهر بالريال: المنصة والمراقبة وتحديث التقييم والدعم'],
+  ['staff_minutes_per_task_with_pilot_today', COST.P1.asis_min, COST.P2.asis_min, 'دقائق الموظفين لكل مهمة في العملية الحالية مع المشروع التجريبي وحلولها الالتفافية'],
+  ['staff_minutes_per_task_after_redesign', COST.P1.tobe_min, COST.P2.tobe_min, 'P1: العملية المرجعية بعد إعادة التصميم في المختبر 2.1؛ P2: تقدير الشؤون القانونية بعد وصول الحقول إلى نظام العقود'],
+  ['rework_minutes_per_failed_task', COST.P1.rework_min, COST.P2.rework_min, 'دقائق تصحيح المهمة التي أخطأ فيها النظام'],
+  ['measured_success_rate', '', COST.P2.success, 'P1: اكتب نسبة النجاح على الحالات الواقعية من المختبر 1.2؛ P2: 106 من 120 عقدًا صحت حقولها كلها (0.88 مقربة)']
 ]));
 
 // ======================================================================================

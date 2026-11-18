@@ -375,7 +375,7 @@
           "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/AIAdoptionFramework.pdf"
         },
         {
-          "title": "الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي (سدايا، أبريل 2026)، مستوى الخطر = الاحتمالية × الأثر",
+          "title": "الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي (سدايا، SDAIA-P145، أبريل 2026)، النص العربي الكامل: مستوى الخطر = الاحتمالية × الأثر",
           "url": "https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf"
         },
         {
@@ -393,6 +393,14 @@
         {
           "title": "سياسة تصنيف البيانات (مكتب إدارة البيانات الوطنية)",
           "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf"
+        },
+        {
+          "title": "Generative AI Guidelines for Government (SDAIA)",
+          "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf"
+        },
+        {
+          "title": "Generative AI Guidelines for Public (SDAIA)",
+          "url": "https://sdaia.gov.sa/en/SDAIA/about/Files/GenerativeAIPublicEN.pdf"
         }
       ]
     },

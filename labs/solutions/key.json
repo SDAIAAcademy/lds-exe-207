@@ -500,14 +500,14 @@
       "baseline_per_task": 98,
       "baseline_per_success": 101.03,
       "asis": {
-        "monthly_total": 81948.33,
-        "successes": 1015.83,
-        "per_success": 80.67
+        "monthly_total": 82163,
+        "successes": 1012,
+        "per_success": 81.19
       },
       "tobe": {
-        "monthly_total": 56188.33,
-        "successes": 1015.83,
-        "per_success": 55.31
+        "monthly_total": 56403,
+        "successes": 1012,
+        "per_success": 55.73
       }
     }
   }

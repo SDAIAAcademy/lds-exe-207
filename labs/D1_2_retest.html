@@ -36,7 +36,7 @@
 
   <div class="step">
     <h3>2 · شغّل الحالات على نموذج مستضاف، أو افتح المخرجات المسجَّلة <span class="min">10 د</span></h3>
-    <p><b>من لديه نموذج مستضاف بواجهة متوافقة مع OpenAI:</b> اضبط <code>LLM_BASE_URL</code> و<code>LLM_MODEL</code> و<code>LLM_API_KEY</code> من وثائق مزودك، ثم شغّل الحالات الست والأربعين كلها:</p>
+    <p><b>من لديه نموذج مستضاف بواجهة متوافقة مع OpenAI:</b> اضبط <code>LLM_BASE_URL</code> و<code>LLM_MODEL</code> و<code>LLM_API_KEY</code> من وثائق مزودك، ثم شغّل الحالات الست والأربعين كلها من جذر نسخة من مستودع المقرر (البرنامج <code>labs/retest/run_retest.py</code> يقرأ ملفات <code>labs/files/</code> بجانبه، ويحتاج أداة <code>uv</code>):</p>
     <pre class="code" data-file="الطرفية"><code>uv run labs/retest/run_retest.py</code></pre>
     <p>يحفظ البرنامج <code>labs/retest/runs/outputs_demo.csv</code> و<code>outputs_realistic.csv</code>، ويكتب في كل سطر هل جاء من النموذج أم من السجل المسجَّل.</p>
     <p><b>من لديه صفحة محادثة لنموذج مستضاف:</b> ضع التعليمات في أول المحادثة، ثم أرسل الرسائل الواقعية من R01 إلى R10 واحدة واحدة، وانقل كل سطر JSON إلى جدولك. خذ بقية الحالات من الملفات المسجَّلة.</p>

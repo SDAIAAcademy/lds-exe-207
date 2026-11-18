@@ -75,7 +75,7 @@ Scaling AI from Pilots to Production
 
 الاستخدام المسؤول: يغطي المقرر التقييم الواقعي قبل أن يتأثر الناس، والموافقة بحسب مستوى المخاطر، والتصنيف قبل الوصول إلى بيانات الإنتاج، والرجوع؛ وتُقسم نتائج إعادة الاختبار بين الحالات العربية والإنجليزية، والفجوة المتركزة في مجموعة واحدة تمنع عبور البوابة.
 
-العتبات والحدود في المختبرات وفي المشروع الختامي (تعريفات الأسباب الستة وقاعدة الأسبقية، ودليل تقدير الجاهزية وحدوده، وحدود البوابات ومسارات الاعتماد، وأجر الدقيقة) من وضع المقرر، لا من أي نص وطني. وقاعدة رَدهة في إدخال بيانات «مقيد» إلى نموذج مستضاف قاعدة الشركة الافتراضية، لا نص وطني.
+العتبات والحدود في المختبرات وفي المشروع الختامي (تعريفات الأسباب الستة وقاعدة الأسبقية، ودليل تقدير الجاهزية وحدوده، وحدود البوابات ومسارات الاعتماد، وأجر الدقيقة) من وضع المقرر، لا من أي نص وطني. وقاعدة رَدهة في إدخال بيانات «مقيد» إلى نموذج مستضاف قاعدة الشركة الافتراضية، لا نص وطني. ولم تتخذ رَدهة أدلة سدايا للذكاء الاصطناعي التوليدي قاعدة لها: دليل الجهات الحكومية يمنع موظفيها من إدخال بيانات مصنفة «مقيد» أو أعلى إلى أدوات الذكاء الاصطناعي التوليدي، ودليل العموم يوصي المؤسسات بسياسات تمنع إدخال المعلومات المصنفة إلى أدوات طرف ثالث. قاعدة رَدهة أوسع منهما، وهي اختيار الشركة الافتراضية لا تطبيق لأي منهما؛ ومن يعمل في جهة حكومية يتبع دليلها. (الدليلان: https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf و https://sdaia.gov.sa/en/SDAIA/about/Files/GenerativeAIPublicEN.pdf)
 
 <!-- academy:labs -->
 ## المختبرات
@@ -112,11 +112,13 @@ Scaling AI from Pilots to Production
 
 - [إطار تبني الذكاء الاصطناعي (سدايا، SDAIA-P121، 2025)، القسم 3.1.2 المبادرات: رصد انتقال المشاريع من التجريب إلى الإنتاج](https://sdaia.gov.sa/ar/SDAIA/about/Files/AIAdoptionFramework.pdf)
 - [AI Adoption Framework (SDAIA-P121), English edition](https://sdaia.gov.sa/en/SDAIA/about/Files/AIAdoptionFramework.pdf)
-- [الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي (سدايا، أبريل 2026)، مستوى الخطر = الاحتمالية × الأثر](https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf)
+- [الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي (سدايا، SDAIA-P145، أبريل 2026)، النص العربي الكامل: مستوى الخطر = الاحتمالية × الأثر](https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf)
 - [National AI Risk Management Framework, executive summary (SDAIA-P145EN, April 2026)](https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryEn.pdf)
 - [ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية (مكتب إدارة البيانات الوطنية، الإصدار 1.5)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandardsAr.pdf)
 - [Data Management and Personal Data Protection Standards (NDMO, version 1.5), English edition](https://sdaia.gov.sa/en/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandards.pdf)
 - [سياسة تصنيف البيانات (مكتب إدارة البيانات الوطنية)](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf)
+- [Generative AI Guidelines for Government (SDAIA)](https://sdaia.gov.sa/en/SDAIA/about/Files/GenAIGuidelinesForGovernmentENCompressed.pdf)
+- [Generative AI Guidelines for Public (SDAIA)](https://sdaia.gov.sa/en/SDAIA/about/Files/GenerativeAIPublicEN.pdf)
 
 ### الأدلة ونماذج التشغيل
 
@@ -134,5 +136,5 @@ Scaling AI from Pilots to Production
 ## المرجعيات الوطنية
 
 - إطار تبني الذكاء الاصطناعي الصادر عن سدايا (SDAIA-P121): https://sdaia.gov.sa/ar/SDAIA/about/Files/AIAdoptionFramework.pdf (النسخة الإنجليزية: https://sdaia.gov.sa/en/SDAIA/about/Files/AIAdoptionFramework.pdf). يستهدف الجهات الحكومية والخاصة. يذكر القسم 3.1.2 (المبادرات) بين مؤشرات الأداء «رصد انتقال المشاريع من التجريب إلى الإنتاج» مؤشرًا على نضج القدرات المؤسسية، ويوصي بمراجعات دورية ربع سنوية للمبادرات؛ ويتناول القسم 4.1 إتاحة البيانات والوصول إليها بصلاحيات بحسب الدور وجودتها وتتبع مصادرها، والقسم 5.1.1 المراقبة بعد النشر. لا يعرّف الإطار نماذج التشغيل المركزي والاتحادي والمحوري؛ هذه في المقرر من دليل Microsoft Learn المذكور في المصادر.
-- الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي (سدايا، أبريل 2026، SDAIA-P145EN)، الملخص التنفيذي: https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf (الإنجليزية: https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryEn.pdf). إطار استرشادي للجهات الحكومية والخاصة، منهجيته تحديد المخاطر وتقييمها ومعالجتها ومراقبتها. مستوى الخطر فيه = الاحتمالية × الأثر، كل منهما من 1 إلى 4: منخفض (1 إلى 2)، ومتوسط (3 إلى 6)، ومرتفع (8 إلى 12)، وحرج (16). مسارات الاعتماد لكل مستوى في المقرر من وضع المقرر، لا من الإطار.
+- الإطار الوطني لإدارة مخاطر الذكاء الاصطناعي (سدايا، أبريل 2026، SDAIA-P145)، النص العربي الكامل: https://sdaia.gov.sa/ar/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryAr.pdf (الملخص التنفيذي بالإنجليزية، SDAIA-P145EN: https://sdaia.gov.sa/en/MediaCenter/KnowledgeCenter/ResearchLibrary/ExecutiveSummaryEn.pdf). مستويات الخطر في النص العربي الكامل، لا في الملخص. إطار استرشادي للجهات الحكومية والخاصة، منهجيته تحديد المخاطر وتقييمها ومعالجتها ومراقبتها. مستوى الخطر فيه = الاحتمالية × الأثر، كل منهما من 1 إلى 4: منخفض (1 إلى 2)، ومتوسط (3 إلى 6)، ومرتفع (8 إلى 12)، وكارثي (16). مسارات الاعتماد لكل مستوى في المقرر من وضع المقرر، لا من الإطار.
 - ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية (مكتب إدارة البيانات الوطنية، الإصدار 1.5): https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandardsAr.pdf (الإنجليزية: https://sdaia.gov.sa/en/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandards.pdf). ملزمة للجهات الحكومية ولشركاء الأعمال المتعاملين مع بيانات حكومية، في 15 مجالًا، منها جودة البيانات (أبعادها: الاكتمال، والانفراد، والجدة، والصلاحية، والدقة، والاتساق) وتصنيف البيانات وتوثيق تتبع أصلها. رَدهة شركة خاصة لا تتعامل في الحالة مع بيانات حكومية: تبنّت أبعاد الجودة ومستويات التصنيف الوطنية (سري للغاية، وسري، ومقيد، وعام، من سياسة تصنيف البيانات: https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf) في سياستها هي.

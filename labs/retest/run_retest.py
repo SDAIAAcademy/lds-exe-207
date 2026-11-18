@@ -4,7 +4,8 @@
 # ///
 """Runs the maintenance-request triage pilot (P1) of LDS-EXE-207 on its two case sets.
 
-With a hosted model: set three environment variables (see .env.example), taken from your
+With a hosted model: set three environment variables (see .env.example; the script does not read
+.env itself, so use "uv run --env-file .env ..." or set them in your shell), taken from your
 provider's own documentation and model list: LLM_BASE_URL (an OpenAI-compatible chat completions
 address), LLM_MODEL and LLM_API_KEY. Each case is sent with the pilot's instructions
 (files/p1_instructions.txt) and the answer is saved as a row of fields.

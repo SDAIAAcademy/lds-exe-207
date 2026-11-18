@@ -99,7 +99,7 @@ const costs = Object.fromEntries(readCsv('files/capstone_costs.csv').map((r) => 
 const p1Success = key.lab_1_2.realistic.pass / key.lab_1_2.realistic.n;
 for (const p of ['P1', 'P2']) {
   const v = (name) => +costs[name][p];
-  const success = p === 'P1' ? p1Success : v('measured_success_rate') && 106 / 120;
+  const success = p === 'P1' ? p1Success : v('measured_success_rate');
   const per = (minutes) => {
     const vol = v('monthly_volume_production');
     const total = vol * v('model_cost_per_task_sar') + v('fixed_monthly_cost_sar') + vol * minutes * v('loaded_cost_per_staff_minute_sar') + vol * (1 - success) * v('rework_minutes_per_failed_task') * v('loaded_cost_per_staff_minute_sar');
